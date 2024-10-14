@@ -1,0 +1,42 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/robin/robotic_arm/install/slambot/lib/python3.10/site-packages",
+        "/home/robin/robotic_arm/install/newbot_description/lib/python3.10/site-packages",
+        "/home/robin/robotic_arm/install/arduinobot_controller/local/lib/python3.10/dist-packages",
+        "/home/robin/opencv_ros2/install/ros2_opencv/lib/python3.10/site-packages",
+        "/home/robin/colcon_ws/install/ur5_control/lib/python3.10/site-packages",
+        "/home/robin/colcon_ws/install/pymoveit2/local/lib/python3.10/dist-packages",
+        "/home/robin/colcon_ws/install/linkattacher_msgs/local/lib/python3.10/dist-packages",
+        "/home/robin/colcon_ws/install/eYantra_Turtle/lib/python3.10/site-packages",
+        "/home/robin/Robotics-and-ROS-2-Learn-by-Doing-Manipulators/Section5_Control/arduinobot_ws/install/arduinobot_py_examples/lib/python3.10/site-packages",
+        "/home/robin/Robotics-and-ROS-2-Learn-by-Doing-Manipulators/Section5_Control/arduinobot_ws/install/arduinobot_controller/local/lib/python3.10/dist-packages",
+        "/home/robin/Robotics-and-ROS-2-Learn-by-Doing-Manipulators/Section4_Digital_Twin/arduinobot_ws/install/arduinobot_py_examples/lib/python3.10/site-packages",
+        "/home/robin/Self-Driving-and-ROS-2-Learn-by-Doing-Odometry-Control/Section7_Differential_Kinematics/bumperbot_ws/install/bumperbot_py_examples/lib/python3.10/site-packages",
+        "/home/robin/Self-Driving-and-ROS-2-Learn-by-Doing-Odometry-Control/Section7_Differential_Kinematics/bumperbot_ws/install/bumperbot_controller/local/lib/python3.10/dist-packages",
+        "/home/robin/Self-Driving-and-ROS-2-Learn-by-Doing-Odometry-Control/Section6_Kinematics/bumperbot_ws/install/bumperbot_py_examples/lib/python3.10/site-packages",
+        "/home/robin/Self-Driving-and-ROS-2-Learn-by-Doing-Odometry-Control/Section5_Control/bumperbot_ws/install/bumperbot_py_examples/lib/python3.10/site-packages",
+        "/home/robin/Self-Driving-and-ROS-2-Learn-by-Doing-Odometry-Control/Section4_Locomotion/bumperbot_ws/install/bumperbot_py_examples/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/robin/robotic_arm/install/slambot/lib/python3.10/site-packages",
+        "/home/robin/robotic_arm/install/newbot_description/lib/python3.10/site-packages",
+        "/home/robin/robotic_arm/install/arduinobot_controller/local/lib/python3.10/dist-packages",
+        "/home/robin/opencv_ros2/install/ros2_opencv/lib/python3.10/site-packages",
+        "/home/robin/colcon_ws/install/ur5_control/lib/python3.10/site-packages",
+        "/home/robin/colcon_ws/install/pymoveit2/local/lib/python3.10/dist-packages",
+        "/home/robin/colcon_ws/install/linkattacher_msgs/local/lib/python3.10/dist-packages",
+        "/home/robin/colcon_ws/install/eYantra_Turtle/lib/python3.10/site-packages",
+        "/home/robin/Robotics-and-ROS-2-Learn-by-Doing-Manipulators/Section5_Control/arduinobot_ws/install/arduinobot_py_examples/lib/python3.10/site-packages",
+        "/home/robin/Robotics-and-ROS-2-Learn-by-Doing-Manipulators/Section5_Control/arduinobot_ws/install/arduinobot_controller/local/lib/python3.10/dist-packages",
+        "/home/robin/Robotics-and-ROS-2-Learn-by-Doing-Manipulators/Section4_Digital_Twin/arduinobot_ws/install/arduinobot_py_examples/lib/python3.10/site-packages",
+        "/home/robin/Self-Driving-and-ROS-2-Learn-by-Doing-Odometry-Control/Section7_Differential_Kinematics/bumperbot_ws/install/bumperbot_py_examples/lib/python3.10/site-packages",
+        "/home/robin/Self-Driving-and-ROS-2-Learn-by-Doing-Odometry-Control/Section7_Differential_Kinematics/bumperbot_ws/install/bumperbot_controller/local/lib/python3.10/dist-packages",
+        "/home/robin/Self-Driving-and-ROS-2-Learn-by-Doing-Odometry-Control/Section6_Kinematics/bumperbot_ws/install/bumperbot_py_examples/lib/python3.10/site-packages",
+        "/home/robin/Self-Driving-and-ROS-2-Learn-by-Doing-Odometry-Control/Section5_Control/bumperbot_ws/install/bumperbot_py_examples/lib/python3.10/site-packages",
+        "/home/robin/Self-Driving-and-ROS-2-Learn-by-Doing-Odometry-Control/Section4_Locomotion/bumperbot_ws/install/bumperbot_py_examples/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}
