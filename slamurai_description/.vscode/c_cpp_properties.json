@@ -14,7 +14,7 @@
         "/home/robin/turtlebot3_ws/install/turtlebot3_gazebo/include/**",
         "/home/robin/turtlebot3_ws/install/turtlebot3_fake_node/include/**",
         "/opt/ros/humble/include/**",
-        "/home/robin/slammurai_ws/src/slamurai_description/include/**",
+        "/home/robin/slamurai_ws/src/slamurai_description/include/**",
         "include/**",
         "/usr/include/**"
       ],

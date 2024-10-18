@@ -1,9 +1,10 @@
 {
     "python.autoComplete.extraPaths": [
+        "/home/robin/ros2_ws/install/slamurai_description/lib/python3.10/site-packages",
+        "/home/robin/opencv_ros2/install/ros2_opencv/lib/python3.10/site-packages",
         "/home/robin/robotic_arm/install/slambot/lib/python3.10/site-packages",
         "/home/robin/robotic_arm/install/newbot_description/lib/python3.10/site-packages",
         "/home/robin/robotic_arm/install/arduinobot_controller/local/lib/python3.10/dist-packages",
-        "/home/robin/opencv_ros2/install/ros2_opencv/lib/python3.10/site-packages",
         "/home/robin/colcon_ws/install/ur5_control/lib/python3.10/site-packages",
         "/home/robin/colcon_ws/install/pymoveit2/local/lib/python3.10/dist-packages",
         "/home/robin/colcon_ws/install/linkattacher_msgs/local/lib/python3.10/dist-packages",
@@ -20,10 +21,11 @@
         "/opt/ros/humble/local/lib/python3.10/dist-packages"
     ],
     "python.analysis.extraPaths": [
+        "/home/robin/ros2_ws/install/slamurai_description/lib/python3.10/site-packages",
+        "/home/robin/opencv_ros2/install/ros2_opencv/lib/python3.10/site-packages",
         "/home/robin/robotic_arm/install/slambot/lib/python3.10/site-packages",
         "/home/robin/robotic_arm/install/newbot_description/lib/python3.10/site-packages",
         "/home/robin/robotic_arm/install/arduinobot_controller/local/lib/python3.10/dist-packages",
-        "/home/robin/opencv_ros2/install/ros2_opencv/lib/python3.10/site-packages",
         "/home/robin/colcon_ws/install/ur5_control/lib/python3.10/site-packages",
         "/home/robin/colcon_ws/install/pymoveit2/local/lib/python3.10/dist-packages",
         "/home/robin/colcon_ws/install/linkattacher_msgs/local/lib/python3.10/dist-packages",
