@@ -1,0 +1,475 @@
+<?xml version="1.0"?>
+
+<robot name="slamurai" xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <xacro:include filename="$(find slamurai_description)/urdf/slamurai_gazebo.xacro" />
+  <xacro:include filename="$(find slamurai_description)/urdf/slamurai_ros2_control.xacro" />
+
+
+  <link name="base_footprint"/>
+
+
+
+<link name="base_link">
+  <inertial>
+    <origin xyz="-1.6862203995056148e-06 2.324567000988418e-07 0.04101810191215324" rpy="0 0 0"/>
+    <mass value="0.3495198182471226"/>
+    <inertia ixx="0.001273" iyy="0.002099" izz="0.003352" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find slamurai_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find slamurai_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="base_joint" type="fixed">
+    <parent link="base_footprint"/>
+    <child link="base_link" />
+    <origin xyz="0 0 0.003" rpy="0 0 0"/>
+  </joint>
+
+<link name="supportC_1">
+  <inertial>
+    <origin xyz="-1.2351231148954867e-15 -1.1102230246251565e-16 0.027499999999997957" rpy="0 0 0"/>
+    <mass value="0.03739064680839314"/>
+    <inertia ixx="1e-05" iyy="1e-05" izz="1e-06" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.105 -0.07 -0.045" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find slamurai_description)/meshes/supportC_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.105 -0.07 -0.045" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find slamurai_description)/meshes/supportC_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="supportA_1">
+  <inertial>
+    <origin xyz="2.498001805406602e-16 8.326672684688674e-17 0.027499999999997166" rpy="0 0 0"/>
+    <mass value="0.03739064680839313"/>
+    <inertia ixx="1e-05" iyy="1e-05" izz="1e-06" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.105 0.07 -0.045" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find slamurai_description)/meshes/supportA_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.105 0.07 -0.045" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find slamurai_description)/meshes/supportA_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="supportD_1">
+  <inertial>
+    <origin xyz="1.3739009929736312e-15 1.3877787807814457e-16 0.027499999999997554" rpy="0 0 0"/>
+    <mass value="0.037390646808393165"/>
+    <inertia ixx="1e-05" iyy="1e-05" izz="1e-06" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.105 0.07 -0.045" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find slamurai_description)/meshes/supportD_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.105 0.07 -0.045" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find slamurai_description)/meshes/supportD_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="supportB_1">
+  <inertial>
+    <origin xyz="-1.3877787807814457e-17 -1.8041124150158794e-16 0.027499999999998193" rpy="0 0 0"/>
+    <mass value="0.0373906468083932"/>
+    <inertia ixx="1e-05" iyy="1e-05" izz="1e-06" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.105 -0.07 -0.045" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find slamurai_description)/meshes/supportB_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.105 -0.07 -0.045" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find slamurai_description)/meshes/supportB_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="top_link_1">
+  <inertial>
+    <origin xyz="-0.10500000000000005 0.07000000000000002 0.002499999999996755" rpy="0 0 0"/>
+    <mass value="0.31617095432609105"/>
+    <inertia ixx="0.00103" iyy="0.001874" izz="0.002902" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.105 0.07 -0.1" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find slamurai_description)/meshes/top_link_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.105 0.07 -0.1" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find slamurai_description)/meshes/top_link_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="laser_link">
+  <inertial>
+    <origin xyz="0.03476832715317002 0.07465122316247715 -0.009737852107389727" rpy="0 0 0"/>
+    <mass value="1.338938753563966"/>
+    <inertia ixx="0.000619" iyy="0.000967" izz="0.001105" ixy="-1e-06" iyz="-3e-06" ixz="0.000159"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.105 0.07 -0.15" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find slamurai_description)/meshes/lidar_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.105 0.07 -0.15" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find slamurai_description)/meshes/lidar_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="buck_1">
+  <inertial>
+    <origin xyz="0.01487471879635087 -0.03553467341533718 -0.035782344518439646" rpy="0 0 0"/>
+    <mass value="0.10059062602912178"/>
+    <inertia ixx="3.2e-05" iyy="1.3e-05" izz="4.3e-05" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0 0.0 -0.085" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find slamurai_description)/meshes/buck_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0 0.0 -0.085" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find slamurai_description)/meshes/buck_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="cpu_1">
+  <inertial>
+    <origin xyz="0.093026144387666 -0.0015523616272141516 -0.027885303992234198" rpy="0 0 0"/>
+    <mass value="0.5576753952846568"/>
+    <inertia ixx="0.000337" iyy="0.000338" izz="0.000569" ixy="-1e-06" iyz="3e-06" ixz="4.1e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0 0.0 -0.085" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find slamurai_description)/meshes/cpu_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0 0.0 -0.085" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find slamurai_description)/meshes/cpu_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="motor_driver_1">
+  <inertial>
+    <origin xyz="0.01416257779458693 0.04471134371975541 -0.0325293630935574" rpy="0 0 0"/>
+    <mass value="0.08494640552546982"/>
+    <inertia ixx="1.4e-05" iyy="1.7e-05" izz="2.3e-05" ixy="0.0" iyz="-0.0" ixz="-3e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0 0.0 -0.085" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find slamurai_description)/meshes/motor_driver_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0 0.0 -0.085" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find slamurai_description)/meshes/motor_driver_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="mega_1">
+  <inertial>
+    <origin xyz="-0.06723907166902694 -0.0006174628758972433 -0.03719873644218733" rpy="0 0 0"/>
+    <mass value="0.11616477871692851"/>
+    <inertia ixx="3.1e-05" iyy="0.00013" izz="0.000159" ixy="3e-06" iyz="0.0" ixz="-3e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0 0.0 -0.085" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find slamurai_description)/meshes/mega_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0 0.0 -0.085" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find slamurai_description)/meshes/mega_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="wheel_1">
+  <inertial>
+    <origin xyz="-4.0245584642661925e-16 -0.012499999999999983 -1.2385925618474403e-15" rpy="0 0 0"/>
+    <mass value="0.08166140504439691"/>
+    <inertia ixx="2.2e-05" iyy="3.6e-05" izz="2.2e-05" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.08 0.1122 -0.027" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find slamurai_description)/meshes/wheel_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.08 0.1122 -0.027" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find slamurai_description)/meshes/wheel_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="wheel_3">
+  <inertial>
+    <origin xyz="4.163336342344337e-16 0.01250000000000008 -1.2385925618474403e-15" rpy="0 0 0"/>
+    <mass value="0.08166140504439691"/>
+    <inertia ixx="2.2e-05" iyy="3.6e-05" izz="2.2e-05" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.08 -0.1122 -0.027" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find slamurai_description)/meshes/wheel_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.08 -0.1122 -0.027" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find slamurai_description)/meshes/wheel_3.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="wheel_2">
+  <inertial>
+    <origin xyz="-6.938893903907228e-17 -0.012499999999999886 -1.2385925618474403e-15" rpy="0 0 0"/>
+    <mass value="0.08166140504439691"/>
+    <inertia ixx="2.2e-05" iyy="3.6e-05" izz="2.2e-05" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.08 0.1122 -0.027" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find slamurai_description)/meshes/wheel_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.08 0.1122 -0.027" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find slamurai_description)/meshes/wheel_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="wheel_4">
+  <inertial>
+    <origin xyz="-1.1102230246251565e-16 0.012499999999999858 -1.2455314557513475e-15" rpy="0 0 0"/>
+    <mass value="0.08166140504439691"/>
+    <inertia ixx="2.2e-05" iyy="3.6e-05" izz="2.2e-05" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.08 -0.1122 -0.027" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find slamurai_description)/meshes/wheel_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.08 -0.1122 -0.027" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find slamurai_description)/meshes/wheel_4.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="IMU_1">
+  <inertial>
+    <origin xyz="-2.9614039499800694e-17 7.253457094217567e-17 0.002499999999996713" rpy="0 0 0"/>
+    <mass value="0.02354999999999999"/>
+    <inertia ixx="1e-06" iyy="2e-06" izz="3e-06" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.0 -0.0 -0.105" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find slamurai_description)/meshes/IMU_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.0 -0.0 -0.105" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find slamurai_description)/meshes/IMU_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="camera_1">
+  <inertial>
+    <origin xyz="-0.003920560747664559 7.29426903094899e-17 -3.5110803153770576e-15" rpy="0 0 0"/>
+    <mass value="0.03149812499999996"/>
+    <inertia ixx="4e-06" iyy="1e-06" izz="3e-06" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.135 -0.0 -0.1025" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find slamurai_description)/meshes/camera_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.135 -0.0 -0.1025" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find slamurai_description)/meshes/camera_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Rigid 10" type="fixed">
+  <origin xyz="-0.105 0.07 0.045" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="supportC_1"/>
+</joint>
+
+<joint name="Rigid 11" type="fixed">
+  <origin xyz="-0.105 -0.07 0.045" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="supportA_1"/>
+</joint>
+
+<joint name="Rigid 12" type="fixed">
+  <origin xyz="0.105 -0.07 0.045" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="supportD_1"/>
+</joint>
+
+<joint name="Rigid 13" type="fixed">
+  <origin xyz="0.105 0.07 0.045" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="supportB_1"/>
+</joint>
+
+<joint name="Rigid 14" type="fixed">
+  <origin xyz="0.0 0.0 0.055" rpy="0 0 0"/>
+  <parent link="supportD_1"/>
+  <child link="top_link_1"/>
+</joint>
+
+<joint name="Rigid 21" type="fixed">
+  <origin xyz="-0.21 0.0 0.05" rpy="0 0 0"/>
+  <parent link="top_link_1"/>
+  <child link="laser_link"/>
+</joint>
+
+<joint name="Rigid 24" type="fixed">
+  <origin xyz="0.0 0.0 0.085" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="buck_1"/>
+</joint>
+
+<joint name="Rigid 26" type="fixed">
+  <origin xyz="0.0 0.0 0.085" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="cpu_1"/>
+</joint>
+
+<joint name="Rigid 27" type="fixed">
+  <origin xyz="0.0 0.0 0.085" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="motor_driver_1"/>
+</joint>
+
+<joint name="Rigid 28" type="fixed">
+  <origin xyz="0.0 0.0 0.085" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="mega_1"/>
+</joint>
+
+<joint name="Rigid 38" type="fixed">
+  <origin xyz="-0.08 -0.1122 0.027" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="wheel_1"/>
+</joint>
+
+<joint name="Rigid 39" type="fixed">
+  <origin xyz="-0.08 0.1122 0.027" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="wheel_3"/>
+</joint>
+
+<joint name="wheel_left_joint" type="continuous">
+  <origin xyz="0.08 -0.1122 0.027" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="wheel_2"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="wheel_right_joint" type="continuous">
+  <origin xyz="0.08 0.1122 0.027" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="wheel_4"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="Rigid 42" type="fixed">
+  <origin xyz="-0.105 0.07 0.005" rpy="0 0 0"/>
+  <parent link="top_link_1"/>
+  <child link="IMU_1"/>
+</joint>
+
+<joint name="Rigid 43" type="fixed">
+  <origin xyz="-0.24 0.07 0.0025" rpy="0 0 0"/>
+  <parent link="top_link_1"/>
+  <child link="camera_1"/>
+</joint>
+
+
+</robot>

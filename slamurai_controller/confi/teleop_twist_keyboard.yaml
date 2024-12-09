@@ -1,0 +1,28 @@
+# teleop_twist_keyboard.yaml
+
+# Key bindings for movement
+key_mapping:
+  forward: "w"
+  backward: "s"
+  left: "a"
+  right: "d"
+  up: "u"
+  down: "j"
+
+# Speed settings
+scale_linear: 0.5  # Default linear speed
+scale_angular: 1.0  # Default angular speed
+
+# Speed increment/decrement (for use with speed up/down keys)
+scale_increment_linear: 0.1  # Amount to increase/decrease linear speed
+scale_increment_angular: 0.1  # Amount to increase/decrease angular speed
+
+# Speed up/down key bindings
+speed_up_key: "q"
+speed_down_key: "z"
+
+# Print instructions on startup
+print_instructions: true
+
+# Topic to publish Twist messages
+cmd_vel_topic: "/cmd_vel"  # This might be used internally, but it's good to keep for clarity
