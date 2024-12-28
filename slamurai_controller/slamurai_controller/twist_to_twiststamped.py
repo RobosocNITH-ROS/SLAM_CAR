@@ -25,7 +25,7 @@ class TwistToTwistStamped(Node):
         
         twist_stamped_msg = TwistStamped()
         twist_stamped_msg.header.stamp = self.get_clock().now().to_msg()
-        twist_stamped_msg.header.frame_id = 'base_footprint'  
+        twist_stamped_msg.header.frame_id = 'base_link'  
         twist_stamped_msg.twist = twist_msg
        
         self.twist_stamped_publisher.publish(twist_stamped_msg)

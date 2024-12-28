@@ -23,8 +23,8 @@ slamurai_controller:
     pose_covariance_diagonal : [0.001, 0.001, 1.0e-3, 1.0e-3, 1.0e-3, 0.01]
     twist_covariance_diagonal: [0.001, 0.001, 1.0e-3, 1.0e-3, 1.0e-3, 0.01]
 
-    wheel_separation : 0.2
-    wheel_radius : 0.025
+    wheel_separation : 0.18
+    wheel_radius : 0.03
 
     wheel_separation_multiplier: 1.0
     left_wheel_radius_multiplier: 1.0

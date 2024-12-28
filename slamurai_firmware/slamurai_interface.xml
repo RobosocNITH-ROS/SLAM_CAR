@@ -1,0 +1,10 @@
+<library path="slamurai_firmware">
+    <class name="slamurai_firmware/slamuraiInterface"
+      type="slamurai_firmware::slamuraiInterface"
+      base_class_type="hardware_interface::SystemInterface"
+    >
+      <description>
+        slamurai Hardware Interface
+      </description>
+    </class>
+  </library>

@@ -2,6 +2,9 @@
 
 <robot name="slamurai" xmlns:xacro="http://ros.org/wiki/xacro">
 
+  <!-- Load Simulated or Real Hardware Interfaces -->
+  <xacro:arg name="is_sim" default="true"/>
+
   <xacro:include filename="$(find slamurai_description)/urdf/slamurai_gazebo.xacro" />
   <xacro:include filename="$(find slamurai_description)/urdf/slamurai_ros2_control.xacro" />
 

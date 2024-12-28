@@ -23,7 +23,7 @@ install(
 install(PROGRAMS
 
   ${PROJECT_NAME}/twist_to_twiststamped.py  
-  ${PROJECT_NAME}/odom_noise.py
+  
   DESTINATION lib/${PROJECT_NAME}
 )
 
