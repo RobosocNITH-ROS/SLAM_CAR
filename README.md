@@ -26,7 +26,7 @@ slamurai_ws/
 
 ```bash
 cd ~/slamurai_ws/src
-git clone <your-repository-url>
+git clone https://github.com/RobosocNITH-ROS/SLAM_CAR.git
 ```
 
 ---
