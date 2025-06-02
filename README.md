@@ -1,4 +1,5 @@
-# 🧽 SLAMurai — SLAM Project using ROS 2
+# 🧽 SLAMurai — SLAM Project using ROS 2(HUMBLE VERSION)
+For JAZZY Version change the branch to #ROS2_JAZZY
 
 This repository contains a complete SLAM pipeline for a differential drive robot using **ROS 2**, simulated in **Gazebo** or deployed on **hardware**. It uses **SLAM Toolbox**, **Nav2 stack**, and custom control nodes.
 
