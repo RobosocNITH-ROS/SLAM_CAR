@@ -1,0 +1,40 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/robin/slamurai_ws/install/slamurai_firmware/include/**",
+        "/home/robin/Self-Driving-and-ROS-2-Learn-by-Doing-Odometry-Control-main/Section11_Sensor_Fusion/bumperbot_ws/install/bumperbot_cpp_examples/include/**",
+        "/home/robin/Self-Driving-and-ROS-2-Learn-by-Doing-Odometry-Control-main/Section11_Sensor_Fusion/bumperbot_ws/install/bumperbot_msgs/include/**",
+        "/home/robin/Self-Driving-and-ROS-2-Learn-by-Doing-Odometry-Control-main/Section11_Sensor_Fusion/bumperbot_ws/install/bumperbot_localization/include/**",
+        "/home/robin/Self-Driving-and-ROS-2-Learn-by-Doing-Odometry-Control-main/Section11_Sensor_Fusion/bumperbot_ws/install/bumperbot_controller/include/**",
+        "/home/robin/bumperbot_ws/install/bumperbot_cpp_examples/include/**",
+        "/home/robin/bumperbot_ws/install/bumperbot_msgs/include/**",
+        "/home/robin/bumperbot_ws/install/bumperbot_localization/include/**",
+        "/home/robin/bumperbot_ws/install/bumperbot_controller/include/**",
+        "/home/robin/colcon_ws/install/servo_msgs/include/**",
+        "/home/robin/colcon_ws/install/realsense_gazebo_plugin/include/**",
+        "/home/robin/colcon_ws/install/payload_service/include/**",
+        "/home/robin/colcon_ws/install/linkattacher_msgs/include/**",
+        "/home/robin/colcon_ws/install/ebot_docking/include/**",
+        "/home/robin/turtlebot3_ws/install/turtlebot3_gazebo/include/**",
+        "/home/robin/turtlebot3_ws/install/turtlebot3_fake_node/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/robin/slamurai_ws/src/slamurai_bringup/include/**",
+        "/home/robin/slamurai_ws/src/slamurai_firmware/include/**",
+        "/home/robin/slamurai_ws/src/slamurai_localization/include/**",
+        "include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

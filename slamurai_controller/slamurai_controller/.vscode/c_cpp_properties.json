@@ -1,0 +1,41 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/robin/rasp_slam/install/slamurai_firmware/include/**",
+        "/home/robin/ros2_ws/install/astra_camera/include/**",
+        "/home/robin/ros2_ws/install/astra_camera_msgs/include/**",
+        "/home/robin/bumperbot_ws/install/bumperbot_cpp_examples/include/**",
+        "/home/robin/bumperbot_ws/install/bumperbot_msgs/include/**",
+        "/home/robin/bumperbot_ws/install/bumperbot_mapping/include/**",
+        "/home/robin/bumperbot_ws/install/bumperbot_localization/include/**",
+        "/home/robin/bumperbot_ws/install/bumperbot_firmware/include/**",
+        "/home/robin/bumperbot_ws/install/bumperbot_controller/include/**",
+        "/home/robin/slamurai_ws/install/slamurai_firmware/include/**",
+        "/home/robin/turtlebot3_ws/install/turtlebot3_gazebo/include/**",
+        "/home/robin/turtlebot3_ws/install/turtlebot3_fake_node/include/**",
+        "/home/robin/colcon_ws/install/servo_msgs/include/**",
+        "/home/robin/colcon_ws/install/realsense_gazebo_plugin/include/**",
+        "/home/robin/colcon_ws/install/payload_service/include/**",
+        "/home/robin/colcon_ws/install/linkattacher_msgs/include/**",
+        "/home/robin/colcon_ws/install/ebot_docking/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/robin/rasp_slam/src/slamurai_bringup/include/**",
+        "/home/robin/rasp_slam/src/slamurai_firmware/include/**",
+        "/home/robin/rasp_slam/src/slamurai_localization/include/**",
+        "/home/robin/rasp_slam/src/slamurai_navigation/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
