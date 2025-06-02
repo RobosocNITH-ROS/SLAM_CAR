@@ -25,10 +25,10 @@ install(
   DESTINATION share/${PROJECT_NAME}
 )
 
-install(PROGRAMS
+# install(PROGRAMS
 
-  ${PROJECT_NAME}/imu_republisher.py
-  DESTINATION lib/${PROJECT_NAME}
-)
+#   ${PROJECT_NAME}/test.py
+#   DESTINATION lib/${PROJECT_NAME}
+# )
 
 ament_package()
