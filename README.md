@@ -1,14 +1,14 @@
 # SLAMurai — SLAM Project using ROS 2 (HUMBLE VERSION)
 
-For JAZZY Version change the branch to `ROS2_JAZZY`.
+*For JAZZY Version, change the branch to `ROS2_JAZZY`.*
 
 This repository contains a complete SLAM pipeline for a differential drive robot using **ROS 2**, simulated in **Gazebo** or deployed on **hardware**. It uses **SLAM Toolbox**, **Nav2 stack**, and custom control nodes.
 
 ---
 
-## Workspace Structure
+## 🗂 Workspace Structure
 
-```bash
+```
 slamurai_ws/
 ├── src/
 │   ├── slamurai_description
@@ -21,7 +21,7 @@ slamurai_ws/
 
 ---
 
-## Setup Instructions
+## 🚀 Setup Instructions
 
 ### 1. Clone the Repo
 
@@ -29,8 +29,6 @@ slamurai_ws/
 cd ~/slamurai_ws/src
 git clone https://github.com/RobosocNITH-ROS/SLAM_CAR.git
 ```
-
----
 
 ### 2. Install Dependencies
 
@@ -48,8 +46,6 @@ sudo apt install python3-colcon-common-extensions ros-humble-navigation2 ros-hum
 
 > Replace `humble` with your ROS 2 distro if different.
 
----
-
 ### 3. Build the Workspace
 
 ```bash
@@ -58,29 +54,25 @@ colcon build --symlink-install
 source install/setup.bash
 ```
 
----
-
 ### 4. Launch Simulation or Hardware
 
-* For Gazebo Simulation:
+**For Gazebo Simulation:**
 
 ```bash
 ros2 launch slamurai_description gazebo.launch.py
 ```
 
-* For Hardware Interface:
+**For Hardware Interface:**
 
 ```bash
 ros2 launch slamurai_firmware hardware_interface.launch.py
 ```
 
-* For LIDAR Hardware Only:
+**For LIDAR Hardware Only:**
 
 ```bash
 ros2 launch slamurai_localization lidar.launch.py
 ```
-
----
 
 ### 5. Launch Controller
 
@@ -88,15 +80,11 @@ ros2 launch slamurai_localization lidar.launch.py
 ros2 launch slamurai_controller controller.launch.py
 ```
 
----
-
 ### 6. Launch SLAM Toolbox
 
 ```bash
 ros2 launch slamurai_mapping slam.launch.py
 ```
-
----
 
 ### 7. Start Teleoperation
 
@@ -104,15 +92,13 @@ ros2 launch slamurai_mapping slam.launch.py
 ros2 run slamurai_controller teleop_custom.py
 ```
 
----
-
 ### 8. Launch RViz for Visualization
 
 ```bash
 rviz2
 ```
 
-Add the following plugins manually:
+**Add the following plugins manually:**
 
 * RobotModel
 * TF
@@ -125,7 +111,7 @@ Add the following plugins manually:
 
 ---
 
-## Notes
+## 📌 Notes
 
 * Ensure all sensors (e.g., LIDAR, IMU) are publishing to correct topics.
 * Check TF tree using `ros2 run tf2_tools view_frames` if transforms are missing.
@@ -133,7 +119,7 @@ Add the following plugins manually:
 
 ---
 
-## Future Extensions
+## 🔮 Future Extensions
 
 * Add Nav2 Navigation stack for autonomous navigation.
 * Integrate camera and ArUco marker detection.
