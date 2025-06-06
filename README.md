@@ -6,7 +6,7 @@ This repository contains a complete SLAM pipeline for a differential drive robot
 
 ---
 
-## 🗂 Workspace Structure
+## Workspace Structure
 
 ```
 slamurai_ws/
@@ -21,7 +21,7 @@ slamurai_ws/
 
 ---
 
-## 🚀 Setup Instructions
+## Setup Instructions
 
 ### 1. Clone the Repo
 
@@ -111,7 +111,7 @@ rviz2
 
 ---
 
-## 📌 Notes
+## Notes
 
 * Ensure all sensors (e.g., LIDAR, IMU) are publishing to correct topics.
 * Check TF tree using `ros2 run tf2_tools view_frames` if transforms are missing.
@@ -119,7 +119,7 @@ rviz2
 
 ---
 
-## 🔮 Future Extensions
+## Future Extensions
 
 * Add Nav2 Navigation stack for autonomous navigation.
 * Integrate camera and ArUco marker detection.
